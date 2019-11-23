@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+
+    <title>Polc demó</title>
+</head>
+
+<script>
+    $(document).ready(function(){
+
+      $('.fp-targy-3-tarto').click(function(){
+        $('.panel-jobbrol').css('transform','translateX(0%)');
+        $('.panel-balrol').css('transform','translateX(-100%)');
+        $('.targy-3').css('z-index','10');
+      });
+
+
+      $('.panel-jobbrol, .panel-balrol').click(function(){
+        $('.panel-jobbrol').css('transform','translateX(100%)');
+        $('.panel-balrol').css('transform','translateX(-200%)');
+      });
+    });
+    </script>
+
+<body>
+    <div class="polc">
+        <div class="container">
+            <div class="fp-targy-1-tarto">
+            </div>
+            <div class="fp-targy-2-tarto">
+            </div>
+            <div class="fp-targy-3-tarto">
+                <img src="/pictures/owl.png" class="targy-3">
+            </div>
+        </div>
+
+        <div class="felso-polc">
+        </div>
+
+        <div class="container">
+            <div class="kp-targy-1-tarto">
+            </div>
+            <div class="kp-targy-2-tarto">
+                <img src="/pictures/owl.png">
+            </div>
+            <div class="kp-targy-3-tarto">
+            </div>
+        </div>
+
+        <div class="kozepso-polc">
+        </div>
+
+        <div class="container">
+            <div class="ap-targy-1-tarto">
+                <img src="/pictures/owl.png">
+            </div>
+            <div class="ap-targy-2-tarto">
+            </div>
+            <div class="ap-targy-3-tarto">
+            </div>
+        </div>
+
+
+        <div class="also-polc">
+        </div>
+
+    </div>
+
+
+
+    <div class="panel-jobbrol">
+        <div class="panel">
+          
+        </div>
+    </div>
+
+    <div class="panel-balrol">
+            <div class="panel">
+          
+                </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
